@@ -1,0 +1,166 @@
+<div class="container text-center">
+<button class="btn btn-primary mb-5 shadow border" (click)="DownloadFile()">Download Resume</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">  
+
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link"> Work Experince</div>
+                    <div style="width: 10.95px;">
+                <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                <div *ngIf="isWorkExperienceOpen"  style="color: white;">v</div>
+            </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">RPA Developer Trainee</h2>
+                    <h3 class="text-primary">AutomationEdge</h3>
+                     <ul>
+                        <li>Use to create bots for repetative process.</li>
+                        <li>with the help of bots there is no need to repaet any manual intervated process.</li>
+                        <li>During the Training I have created bot for RESUME SCREENING process.</li>
+                        <li>Worked on windows Automation.</li>
+                        <li>Also created bots for the web automation.</li>
+                     </ul>
+                </div>
+                
+                <hr>
+    
+            <div style="text-align: left;">
+                      <h2 class="mb-0">Internship</h2>
+                      <h3 class="text-primary">Future Ready Talent</h3>
+                <ul>
+                    <li>In this Internship I get to know about the concept of MS Azure cloud and its service.</li>
+                    <li>I have deployed python project using the Azure VM,Azure Sql Database,App Service</li>
+                    <li>I also created users,assign the specific roles using EntraId.</li>
+                    <li>Here I also learned about the linux OS.</li>
+                </ul>
+            </div> 
+            
+      
+    </accordion-group>
+        <!------------------------------------------------------>
+        <div style="text-align: center;">   
+        <accordion-group [(isOpen)]="isEducationOpen ">
+            <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                <div style="visibility: hidden;">></div>
+                <div class="btn-link">Education</div>
+                <div style="width: 10.95px;">
+            <div *ngIf="!isEducationOpen" style="color: white;">></div>
+            <div *ngIf="isEducationOpen"  style="color: white;">v</div>
+        </div>
+            </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Bachelor's Of Engineering</h2>
+                    <h3 class="text-primary">Svaitribai Phule Pune University</h3>
+                    <ul>
+                        <li>Graduated from APCOER,Pune in 2023</li>
+                        <li>Secured 8.33 CGPA</li>
+                    </ul>
+        
+                    
+                </div>
+         
+            </accordion-group>
+        </div>
+        <!------------------------------------------------------>
+        
+        <accordion-group [(isOpen)]="isCertificationOpen">
+            <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                <div style="visibility: hidden;">></div>
+                <div class="btn-link">Certification</div>
+                <div style="width: 10.95px;">
+            <div *ngIf="!isCertificationOpen" style="color: white;">></div>
+            <div *ngIf="isCertificationOpen"  style="color: white;">v</div>
+        </div>
+            </button>
+            <div style="text-align: left;">
+                <h3 >MS-azure Fundamental(Az-900)</h3>
+                     <ul>
+                       <li>July 2024</li>
+                     </ul>
+                <h3> Java Full Stack</h3>
+                <ul>
+                    <li>Sybiosis Digital Acedmy (Angular17),feb 2024</li>
+                    <li>TNSIF (React),sept2023</li>
+                </ul>
+                <h3 >Microsoft Azure Cloud Skilling Program</h3>
+                <ul>
+                    <li>Jan 2024</li>
+                </ul>
+                <h3 >Python fundametnals</h3>
+                    <ul>
+                            <li>Udemy,2022</li>
+                    </ul>
+                    <h3>Machine Learning</h3>
+                    <ul>
+                        <li> AICTEE Eduskills ,Aug 2022</li>
+                    </ul>
+                    <h3>BluePrism fundamentals</h3>
+                    <ul>
+                        <li>BluePrism Foundation Training,2022 Dec</li>
+                    </ul>
+                </div>
+            </accordion-group>
+        
+        <!------------------------------------------------------>
+          
+        <accordion-group [(isOpen)]="isSkillsOpen">   
+            <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                <div style="visibility: hidden;">></div>
+                <div class="btn-link">Skills</div>
+                <div style="width: 10.95px;">
+            <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+            <div *ngIf="isSkillsOpen"  style="color: white;">v</div>
+        </div>
+            </button>     
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Programming languages</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>C </li>
+                            <li>Cpp</li>
+                        </ul>
+
+                    </div>
+                    <div class="col">
+                         <h3>Frameworks</h3>
+                         <ul>
+                            <li>Angular</li>
+                            <li>SpringBoot</li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h3>Cloud</h3>
+                        <ul>
+                            <li>MS Azure</li>                   
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>RPA</h3>
+                        <ul>
+                            <li>AutomationEdge</li>
+                            <li>BluePrism</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Basic Networking</h3>
+                        <ul>
+                            <li>Basic DNS</li>
+                            <li>Web Hosting</li>
+                        </ul>
+                    </div>
+        
+                </div>
+            
+            </accordion-group>
+        </accordion>
+    
+    </div>
+
+</div>
